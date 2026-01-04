@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude specific shared preferences that contain sensitive data -->
+    <exclude domain="sharedpref" path="secret_shared_prefs.xml"/>
+    
+    <!-- Include all other data -->
+    <include domain="database" path="*.db"/>
+    <include domain="file" path="*.json"/>
+    <include domain="file" path="*.txt"/>
+    
+    <!-- Exclude cache and temporary files -->
+    <exclude domain="file" path="cache/"/>
+    <exclude domain="file" path="temp/"/>
+</full-backup-content>

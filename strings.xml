@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Crypto Signal Assistant</string>
+    
+    <!-- Navigation -->
+    <string name="nav_signals">Сигналы</string>
+    <string name="nav_statistics">Статистика</string>
+    <string name="nav_settings">Настройки</string>
+    
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
+    <string name="delete">Удалить</string>
+    <string name="edit">Редактировать</string>
+    <string name="refresh">Обновить</string>
+    <string name="loading">Загрузка...</string>
+    <string name="error">Ошибка</string>
+    <string name="retry">Повторить</string>
+    <string name="empty">Пусто</string>
+    
+    <!-- Signals -->
+    <string name="signals_title">Сигналы</string>
+    <string name="signal_long">LONG</string>
+    <string name="signal_short">SHORT</string>
+    <string name="signal_active">Активный</string>
+    <string name="signal_completed">Завершен</string>
+    <string name="signal_entry_price">Вход</string>
+    <string name="signal_stop_loss">SL</string>
+    <string name="signal_take_profit">TP</string>
+    <string name="signal_leverage">Плечо</string>
+    <string name="signal_confidence">Доверие</string>
+    <string name="signal_risk_reward">R/R</string>
+    <string name="signal_timeframe">Таймфрейм</string>
+    <string name="signal_horizon">Горизонт</string>
+    <string name="signal_comment">Комментарий</string>
+    <string name="signal_no_data">Нет сигналов</string>
+    <string name="signal_no_entry">Вход не рекомендован</string>
+    <string name="signal_no_entry_description">Адекватных точек входа нет</string>
+    
+    <!-- Statistics -->
+    <string name="statistics_title">Статистика</string>
+    <string name="statistics_winrate">Win Rate</string>
+    <string name="statistics_profit_factor">Profit Factor</string>
+    <string name="statistics_max_drawdown">Max Drawdown</string>
+    <string name="statistics_avg_rr">Avg R/R</string>
+    <string name="statistics_total_signals">Всего сигналов</string>
+    <string name="statistics_active_signals">Активных</string>
+    <string name="statistics_this_month">Этот месяц</string>
+    <string name="statistics_profit_by_pair">Прибыль по парам</string>
+    <string name="statistics_profit_by_timeframe">По таймфреймам</string>
+    <string name="statistics_time_range_day">День</string>
+    <string name="statistics_time_range_week">Неделя</string>
+    <string name="statistics_time_range_month">Месяц</string>
+    <string name="statistics_time_range_all">Все время</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_trading_pairs">Торговые пары</string>
+    <string name="settings_aggressiveness">Режим работы</string>
+    <string name="settings_conservative">Консервативный</string>
+    <string name="settings_balanced">Сбалансированный</string>
+    <string name="settings_aggressive">Агрессивный</string>
+    <string name="settings_notifications">Уведомления</string>
+    <string name="settings_notifications_new_signals">Новые сигналы</string>
+    <string name="settings_notifications_tp_sl">TP/SL достижения</string>
+    <string name="settings_notifications_market_events">Рыночные события</string>
+    <string name="settings_notifications_no_entry">Отсутствие входов</string>
+    <string name="settings_quiet_hours">Тихий режим</string>
+    <string name="settings_security">Безопасность</string>
+    <string name="settings_pin_code">PIN-код</string>
+    <string name="settings_biometrics">Биометрия</string>
+    <string name="settings_auto_logout">Автовыход</string>
+    <string name="settings_risk_params">Риск-параметры</string>
+    <string name="settings_risk_per_trade">Риск на сделку</string>
+    <string name="settings_max_drawdown">Макс. просадка</string>
+    <string name="settings_current_drawdown">Текущая просадка</string>
+    <string name="settings_about">О приложении</string>
+    <string name="settings_version">Версия</string>
+    <string name="settings_clear_data">Очистить данные</string>
+    <string name="settings_export_stats">Экспорт статистики</string>
+    
+    <!-- Risk Management -->
+    <string name="risk_per_trade_percent">2%</string>
+    <string name="max_drawdown_percent">20%</string>
+    <string name="risk_conservative_desc">Низкий риск, редкие сигналы</string>
+    <string name="risk_balanced_desc">Оптимальный баланс</string>
+    <string name="risk_aggressive_desc">Больше сигналов, выше риск</string>
+    
+    <!-- Notifications -->
+    <string name="notification_new_signal_title">Новый сигнал</string>
+    <string name="notification_no_signal_title">Вход не рекомендован</string>
+    <string name="notification_no_signal_text">Адекватных точек входа нет</string>
+    <string name="notification_tp_reached">TP достигнут</string>
+    <string name="notification_sl_reached">SL достигнут</string>
+    
+    <!-- Errors -->
+    <string name="error_network">Ошибка сети</string>
+    <string name="error_api">Ошибка API: %d</string>
+    <string name="error_database">Ошибка базы данных</string>
+    <string name="error_signal_generation">Ошибка генерации сигнала</string>
+    <string name="error_no_internet">Нет подключения к интернету</string>
+    <string name="error_timeout">Время ожидания истекло</string>
+    <string name="error_unknown">Неизвестная ошибка</string>
+    
+    <!-- Time -->
+    <string name="time_minutes">мин</string>
+    <string name="time_hours">ч</string>
+    <string name="time_days">д</string>
+    <string name="time_just_now">только что</string>
+    
+    <!-- Percentages and values -->
+    <string name="percentage_format">%s%%</string>
+    <string name="price_format">$%.2f</string>
+    <string name="rr_format">%.1f</string>
+    <string name="confidence_format">%d%%</string>
+    <string name="leverage_format">%.1fx</string>
+    
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">Добро пожаловать</string>
+    <string name="onboarding_description">AI-ассистент для крипто-сигналов</string>
+    <string name="onboarding_risk_title">Риск-параметры</string>
+    <string name="onboarding_risk_description">Настройте уровни риска для торговли</string>
+    <string name="onboarding_pairs_title">Торговые пары</string>
+    <string name="onboarding_pairs_description">Выберите пары для отслеживания</string>
+    <string name="onboarding_start">Начать торговлю</string>
+    
+    <!-- Disclaimer -->
+    <string name="disclaimer_title">Важное предупреждение</string>
+    <string name="disclaimer_text">Торговля криптовалютами сопряжена с высоким риском. Приложение предоставляет только рекомендации и не несет ответственности за убытки. Не торгуйте суммами, которые не можете позволить себе потерять.</string>
+    <string name="disclaimer_accept">Принимаю</string>
+    
+</resources>
