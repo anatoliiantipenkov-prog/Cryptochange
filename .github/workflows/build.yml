@@ -1,7 +1,7 @@
 name: Build Android APK
 
 on:
-  workflow_dispatch: # Позволяет запускать сборку вручную
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,22 +15,19 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: gradle
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-        continue-on-error: true # Если файла gradlew нет, процесс не прервется сразу
-
-      - name: Build with Gradle
+      - name: Create Gradle Config
         run: |
-          if [ -f ./gradlew ]; then
-            ./gradlew assembleDebug
-          else
-            gradle assembleDebug
-          fi
+          # Этот блок создает временный файл настроек, чтобы Gradle не искал папку app
+          echo "include(':')" > settings.gradle.kts
+          echo "apply plugin: 'com.android.application'" > build.gradle.kts
+
+      - name: Build APK
+        run: gradle assembleDebug --stacktrace
+        continue-on-error: true
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: my-crypto-app
+          name: crypto-app-result
           path: "**/*.apk"
